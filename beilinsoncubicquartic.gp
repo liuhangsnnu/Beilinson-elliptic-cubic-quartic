@@ -3,7 +3,7 @@
 *******************************************************/
 {
 \\ y^2=x^3+l^2*((p^2+p+1)*x+4*l*p^2*(p+1)^2)^2
-\\ p+1 is a root of p^3+a*p^2+(a-1)*p+1
+\\ p+1 is a root of u^3+a*u^2+(a-1)*u+1
 getcurvenontorsion(a,l) =
 my(pol,rpol,q,u,sf2,sf3,K,L,K1,L1,M,M1,EK,EL);
 pol=p^3+(a+3)*p^2+(a+2)*p+1;
@@ -125,7 +125,6 @@ return([E,P,idealnorm(K, ellglobalred(E)[1]),K.disc]);
 }
 
 {
-\\ test a=-1
 \\ compare regulator and L function for the family with Z/10 torsion
 compareregLZ10(a) =
 my(EP,cond,E,P1,P2,P3,P4,x1,x2,x3,x4,tau,ytau1,ytau2,l1,l2,l3,l4,m,lstar);

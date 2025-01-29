@@ -20,4 +20,4 @@ CUBIC AND QUARTIC FIELDS
 
 # exception.pdf
 
-Tables of the families in the paper $K_2$ OF FAMILIES OF ELLIPTIC CURVES OVER NON-ABELIAN CUBIC AND QUARTIC FIELDS written explicitly as functions of X and a. We list the values of $a \in \mathbb{Z}$ for which the polynomial becomes reducible, the Galois group becomes smaller and $Q[X]/(f_a(X))$ is not totally real. 
+Tables of the families in the paper $K_2$ OF FAMILIES OF ELLIPTIC CURVES OVER NON-ABELIAN CUBIC AND QUARTIC FIELDS written explicitly as functions of $X$ and $a$. We list the values of $a \in \mathbb{Z}$ for which the polynomial becomes reducible, the Galois group becomes smaller and $Q[X]/(f_a(X))$ is not totally real. 

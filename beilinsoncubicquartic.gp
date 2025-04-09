@@ -154,15 +154,23 @@ l4=2*10^3*(elldlog(x4,tau)-I*elljlog(x4,tau));
 if(#tau==4,
   \\ totally real
   m=[l1[1],l2[1],l3[1],l4[1];l1[2],l2[2],l3[2],l4[2];l1[3],l2[3],l3[3],l4[3];l1[4],l2[4],l3[4],l4[4]],
+);
+if(#tau==3,  
+  \\ two real embeddings and one complex embedding
+  ytau = imag(tau[3]);
+  m=[l1[1],l2[1],l3[1],l4[1];\
+  l1[2],l2[2],l3[2],l4[2];\
+  2*imag(l1[3])/ytau,2*imag(l2[3])/ytau,2*imag(l3[3])/ytau,2*imag(l4[3])/ytau;\
+  2*real(l1[3]),2*real(l2[3]),2*real(l3[3]),2*real(l4[3])]
+);
+if(#tau==2,  
   \\ two complex embeddings
   ytau1 = imag(tau[1]);
   ytau2 = imag(tau[2]);
-
   m=[2*imag(l1[1])/ytau1,2*imag(l2[1])/ytau1,2*imag(l3[1])/ytau1,2*imag(l4[1])/ytau1;\
   2*real(l1[1]),2*real(l2[1]),2*real(l3[1]),2*real(l4[1]);\
   2*imag(l1[2])/ytau2,2*imag(l2[2])/ytau2,2*imag(l3[2])/ytau2,2*imag(l4[2])/ytau2;\
   2*real(l1[2]),2*real(l2[2]),2*real(l3[2]),2*real(l4[2])]
-
 );
 
 print("tau=",tau);
